@@ -23,7 +23,7 @@ public class NoteController {
 
 
     @PostMapping(value = "/write")
-    public boolean writeNote(@RequestBody Note note) {
+    public boolean writeNote(@RequestBody Note note) throws Exception {
         log.info("登陆入参： Note 对象");
         boolean res = noteService.saveNote(note.getUser_id(), note.getContent());
         log.info("返回结果为布尔值，表示留言是否成功："+ res);
@@ -31,7 +31,7 @@ public class NoteController {
     }
 
     @GetMapping(value = "/findAll/{page}")
-    public List<Note> findAll(@PathVariable(name = "page") int page) {
+    public List<Note> findAll(@PathVariable(name = "page") int page) throws Exception {
 
         log.info("查询所有参数： page(页码)");
         List<Note> list = noteService.findAll(page);
@@ -41,7 +41,7 @@ public class NoteController {
     }
 
     @GetMapping(value = "/findUserNote/{user_id}/{page}")
-    public List<Note> findUserNote(@PathVariable(name = "user_id") int user_id, @PathVariable(name = "page") int page) {
+    public List<Note> findUserNote(@PathVariable(name = "user_id") int user_id, @PathVariable(name = "page") int page) throws Exception {
 
         log.info("查询所有参数：user_id(用户id) page(页码)");
         List<Note> list = noteService.findUserNote(user_id, page);
@@ -51,7 +51,7 @@ public class NoteController {
     }
 
     @DeleteMapping(value = "/delete/{user_id}/{_id}")
-    public boolean deleteNoteById(@PathVariable(name = "user_id") int user_id, @PathVariable(name = "_id") String _id) {
+    public boolean deleteNoteById(@PathVariable(name = "user_id") int user_id, @PathVariable(name = "_id") String _id) throws Exception {
 
         log.info("查询所有参数：user_id(用户id) _id(mongo中的objectID)");
         boolean res = noteService.deleteNoteById(user_id,_id);

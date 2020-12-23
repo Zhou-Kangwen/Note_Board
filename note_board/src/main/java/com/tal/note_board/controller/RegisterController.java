@@ -37,7 +37,7 @@ public class RegisterController {
 
 
     @PostMapping(value = "/register")
-    public boolean register(@RequestBody @Validated User user) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
+    public boolean register(@RequestBody @Validated User user) throws Exception {
 
         log.info("注册方法入参：User对象");
         boolean res = userService.register(user);
