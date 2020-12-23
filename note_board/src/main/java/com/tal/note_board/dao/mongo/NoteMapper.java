@@ -32,6 +32,6 @@ public interface NoteMapper {
      * @param objectId
      * @return
      */
-    boolean deleteNoteById(int user_id, String objectId);
+    boolean deleteNoteById(int user_id, String objectId) throws Exception;
 
 }

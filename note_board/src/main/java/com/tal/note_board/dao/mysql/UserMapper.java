@@ -5,26 +5,26 @@ import com.tal.note_board.dao.pojo.User;
 public interface UserMapper {
 
     /**
-     * 注册：通过用户名查找用户
-     *
+     * 通过用户名查user
      * @param userName
      * @return
+     * @throws Exception
      */
     User findUserByName(String userName);
 
     /**
-     * 注册：存储用户
-     *
+     * 存用户信息
      * @param user
+     * @throws Exception
      */
     void save(User user);
 
     /**
-     * 通过账号密码找用户
-     *
+     * 验证用户名和密码
      * @param userName
      * @param password
      * @return
+     * @throws Exception
      */
     User findUserByUserNameAndPassword(String userName, String password);
 }

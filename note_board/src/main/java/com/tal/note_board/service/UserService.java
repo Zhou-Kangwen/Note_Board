@@ -9,13 +9,13 @@ public interface UserService {
      * @param user
      * @return
      */
-    boolean register(User user);
+    boolean register(User user) throws Exception;
 
     /**
      * @param userName
      * @param password
      * @return
      */
-    boolean login(String userName, String password);
+    boolean login(String userName, String password) throws Exception;
 
 }

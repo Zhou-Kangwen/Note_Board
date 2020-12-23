@@ -37,27 +37,27 @@ public class RegisterController {
 
 
     @PostMapping(value = "/register")
-    public ResponseEntity<Map<String, Object>> register(@RequestBody @Validated User user) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
+    public boolean register(@RequestBody @Validated User user) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
 
+        log.info("注册方法入参：User对象");
+        boolean res = userService.register(user);
 
-        Map<String, Object> m = new HashMap<>();
-        if (userService.register(user)) {
-            m.put("Message", "注册成功！");
-            m.put("user_id", ""+user.getPk_id());
+        if (res) {
+            log.info("注册成功，调用MQ发送邮件给当前邮箱！");
             callback(user.getEmail());
-            return new ResponseEntity<>(m, HttpStatus.ACCEPTED);
-        } else {
-            m.put("Error","该用户名已存在，请尝试其他用户名！");
-            return new ResponseEntity<>(m, HttpStatus.BAD_REQUEST);
+            log.info("注册成功并给用户成功发送邮件！");
+            return true;
         }
+        log.info("注册失败！");
+        return false;
 
     }
 
     @GetMapping(value = "/login")
     public ResponseEntity<Map<String, Object>> login(String userName, String password) throws Exception{
 
-        log.info("haha");
-        Map<String, Object> m = new HashMap<>();
+        log.info("登陆方法入参：username（用户名），password（密码）");
+        Map<String,Object> m = new HashMap<>();
         if (userService.login(userName, password)) {
             m.put("Message", "登陆成功！");
             //创建token
