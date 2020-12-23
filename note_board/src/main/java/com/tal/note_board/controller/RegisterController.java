@@ -56,6 +56,7 @@ public class RegisterController {
     @GetMapping(value = "/login")
     public ResponseEntity<Map<String, Object>> login(String userName, String password) throws Exception{
 
+        log.info("haha");
         Map<String, Object> m = new HashMap<>();
         if (userService.login(userName, password)) {
             m.put("Message", "登陆成功！");

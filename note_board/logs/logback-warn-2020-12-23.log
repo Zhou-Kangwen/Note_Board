@@ -1,0 +1,30 @@
+2020-12-23 11:35:29.576 logback [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note] & group[DEFAULT_GROUP]
+2020-12-23 11:35:29.579 logback [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:35:29.581 logback [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note-test.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:35:32.052 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:35:32.058 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:37:14.738 logback [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note] & group[DEFAULT_GROUP]
+2020-12-23 11:37:14.743 logback [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:37:14.745 logback [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note-test.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:37:16.749 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:37:16.753 logback [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:39:12.080 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note] & group[DEFAULT_GROUP]
+2020-12-23 11:39:12.083 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:39:12.085 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note-test.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:39:14.009 note [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:39:14.015 note [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:40:08.053 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note] & group[DEFAULT_GROUP]
+2020-12-23 11:40:08.057 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:40:08.059 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note-test.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:40:10.016 note [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:40:10.020 note [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:53:41.721 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note] & group[DEFAULT_GROUP]
+2020-12-23 11:53:41.724 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:53:41.726 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note-test.properties] & group[DEFAULT_GROUP]
+2020-12-23 11:53:43.746 note [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 11:53:43.751 note [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 14:37:00.446 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note] & group[DEFAULT_GROUP]
+2020-12-23 14:37:00.449 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note.properties] & group[DEFAULT_GROUP]
+2020-12-23 14:37:00.450 note [main] WARN  c.a.c.n.c.NacosPropertySourceBuilder - Ignore the empty nacos configuration and get it based on dataId[note-test.properties] & group[DEFAULT_GROUP]
+2020-12-23 14:37:02.346 note [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-12-23 14:37:02.351 note [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.

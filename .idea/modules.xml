@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Note_Board.iml" filepath="$PROJECT_DIR$/.idea/Note_Board.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/note_board/note_board.iml" filepath="$PROJECT_DIR$/note_board/note_board.iml" />
+    </modules>
+  </component>
+</project>

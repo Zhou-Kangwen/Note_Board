@@ -33,10 +33,9 @@ public class NoteMapperImpl implements NoteMapper {
     public void saveNote(Note note) {
         //System.out.println("mongo.....并修改了redis....");
         try {
-            mongoTemplate.insert(note, "note_board");
-            //如果插入成功，redis删除失败怎么办
             redisUtil.delete("n:fa:1");
             redisUtil.delete("n:fbu:"+note.getUser_id()+":1");
+            mongoTemplate.insert(note, "note_board");
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -63,12 +62,12 @@ public class NoteMapperImpl implements NoteMapper {
                 List<Note> res;
                 try {
                     res = mongoTemplate.find(query, Note.class, "note_board");
+                    redisUtil.setEx(key, res, 60 * 30);
                 } catch (Exception e) {
                     res = null;
                     e.printStackTrace();
                 }
 
-                redisUtil.setEx(key, res, 60 * 30);
                 return res;
 
             } else {
@@ -81,7 +80,7 @@ public class NoteMapperImpl implements NoteMapper {
             query.addCriteria(Criteria.where(null).is(null));
             query.skip((page - 1) * pageSize).limit(pageSize);
             query.with(Sort.by(Sort.Order.desc("gmt_create")));
-            List<Note> res = null;
+            List<Note> res;
             try {
                 res = mongoTemplate.find(query, Note.class, "note_board");
             } catch (Exception e) {
@@ -98,7 +97,7 @@ public class NoteMapperImpl implements NoteMapper {
      * 获取对应pk_id的note
      *
      * @param user_id
-     * @return
+     * @return List<Note>
      */
     @Override
     public List<Note> findByUserId(int user_id, int page) {
